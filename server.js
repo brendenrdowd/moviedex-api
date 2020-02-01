@@ -72,6 +72,9 @@ function handleGetMovie(req, res) {
   }
 };
 
+app.get('/',(req,res)=>{
+  res.redirect('/movie')
+})
 app.get('/movie', handleGetMovie);
 
 
